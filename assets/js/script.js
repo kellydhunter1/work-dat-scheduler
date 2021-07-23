@@ -5,5 +5,6 @@ const currentTime = moment().format("h:mm a");
 $("#currentDate").append(currentDate);
 $("#currentTime").append(currentTime);
 
-// 
+// time converted into moments.js timing
+
 

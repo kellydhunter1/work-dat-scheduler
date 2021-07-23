@@ -4,20 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
-      rel="stylesheet"
-    />
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Work Day Scheduler</title>
   </head>
@@ -32,71 +23,97 @@
 
     <!-- Timeblocks go here -->
     <div class="container">
+
       <!-- 7:00 AM -->
-      <div class="container" id="work-hours-container">
-        <div class="input-group row">
-          <span class="input-group-text" id ="seven-oclock"> 7:00 AM</span>
-          <input type="text" aria-label="First name" class="form-control">
-          <button class="btn btn-outline-secondary" type="button" id="button-addon2">Save</button>
-        </div>
+      <div class="row">
+        <form class="input-group" id="seven-oclock">
+          <span class="input-group-text" > 7:00 AM</span>
+          <textarea type="text" aria-label="First name" class="form-control col" id ="seven-oclock-text"></textarea>
+          <button class="btn btn-outline-secondary" type="button" id="button-addon2"><span class="oi oi-lock-locked"></span></button>
+        </form>
+      </div>
+
+
       <!-- 8:00 AM -->
-        <div class="input-group row">
-          <span class="input-group-text" id ="eight-oclock"> 8:00 AM </span>
-          <input type="text" aria-label="First name" class="form-control">
-          <button class="btn btn-outline-secondary" type="button" id="button-addon2">Save</button>
-        </div>
+      <div class="row">
+        <form class="input-group" id="eight-oclock">
+          <span class="input-group-text" > 8:00 AM </span>
+          <textarea type="text" aria-label="First name" class="form-control col" id ="eight-oclock-text"></textarea>
+          <button class="btn btn-outline-secondary" type="button" id="button-addon2"><span class="oi oi-lock-locked"></span></button>
+        </form>
+      </div>
       <!-- 9:00 AM -->
-        <div class="input-group row">
-          <span class="input-group-text" id ="nine-oclock"> 9:00 AM </span>
-          <input type="text" aria-label="First name" class="form-control">
-          <button class="btn btn-outline-secondary" type="button" id="button-addon2">Save</button>
-        </div>
+      <div class="row">
+        <form class="input-group" id="nine-oclock">
+          <span class="input-group-text" > 9:00 AM </span>
+          <textarea type="text" aria-label="First name" class="form-control col" id ="nine-oclock-text"></textarea>
+          <button class="btn btn-outline-secondary" type="button" id="button-addon2"><span class="oi oi-lock-locked"></span></button>
+        </form>
+      </div>
       <!-- 10:00 AM -->
-        <div class="input-group row">
-          <span class="input-group-text" id ="ten-oclock">10:00 AM</span>
-          <input type="text" aria-label="First name" class="form-control">
-          <button class="btn btn-outline-secondary" type="button" id="button-addon2">Save</button>
-        </div>
+      <div class="row">
+        <form class="input-group" id="ten-oclock">
+          <span class="input-group-text" >10:00 AM</span>
+          <textarea type="text" aria-label="First name" class="form-control col" id ="ten-oclock-text"></textarea>
+          <button class="btn btn-outline-secondary" type="button" id="button-addon2"><span class="oi oi-lock-locked"></span></button>
+        </form>
+      </div>
         <!-- 11:00 AM -->
-        <div class="input-group row">
-          <span class="input-group-text" id ="eleven-oclock">11:00 AM</span>
-          <input type="text" aria-label="First name" class="form-control">
-          <button class="btn btn-outline-secondary" type="button" id="button-addon2">Save</button>
-        </div>
+        <div class="row">
+          <form class="input-group" id="eleven-oclock">
+          <span class="input-group-text">11:00 AM</span>
+          <textarea type="text" aria-label="First name" class="form-control col" id ="eleven-oclock"></textarea>
+          <button class="btn btn-outline-secondary" type="button" id="button-addon2"><span class="oi oi-lock-locked"></span></button>
+        </form>
+      </div>
         <!-- 12:00 PM -->
-        <div class="input-group row">
-          <span class="input-group-text col-xs-2" id ="twelve-oclock">12:00 PM</span>
-          <input type="text" aria-label="First name" class="form-control">
-          <button class="btn btn-outline-secondary" type="button" id="button-addon2">Save</button>
-        </div>
+        <div class="row">
+          <form class="input-group" id="twelve-oclock">
+          <span class="input-group-text">12:00 PM</span>
+          <textarea type="text" aria-label="First name" class="form-control col" id ="twelve-oclock-text"></textarea>
+          <button class="btn btn-outline-secondary" type="button" id="button-addon2"><span class="oi oi-lock-locked"></span></button>
+        </form>
+      </div>
         <!-- 1:00 PM -->
-        <div class="input-group row">
-          <span class="input-group-text col-xs-2" id ="one-oclock"> 1:00 PM </span>
-          <input type="text" aria-label="First name" class="form-control">
-          <button class="btn btn-outline-secondary" type="button" id="button-addon2">Save</button>
-        </div>
+        <div class="row">
+          <form class="input-group" id="one-oclock">
+          <span class="input-group-text"> 1:00 PM </span>
+          <textarea type="text" aria-label="First name" class="form-control col" id ="one-oclock-text"></textarea>
+          <button class="btn btn-outline-secondary" type="button" id="button-addon2"><span class="oi oi-lock-locked"></span></button>
+        </form>
+      </div>
         <!-- 2:00 PM -->
-        <div class="input-group row">
-          <span class="input-group-text" id ="two-oclock"> 2:00 PM </span>
-          <input type="text" aria-label="First name" class="form-control">
-          <button class="btn btn-outline-secondary" type="button" id="button">Save</button>
-        </div>
+        <div class="row">
+          <form class="input-group" id="two-oclock">
+          <span class="input-group-text"> 2:00 PM </span>
+          <textarea type="text" aria-label="First name" class="form-control col" id="two-oclock-text"></textarea>
+          <button class="btn btn-outline-secondary" type="button" id="button-addon2"><span class="oi oi-lock-locked"></span></button>
+        </form>
+      </div>
         <!-- 3:00 PM -->
-        <div class="input-group row">
-          <span class="input-group-text" id ="three-oclock"> 3:00 PM </span>
-          <input type="text" aria-label="First name" class="form-control">
-          <button class="btn btn-outline-secondary" type="button" id="button-addon2">Save</button>
-        </div>
+        <div class="row">
+          <form class="input-group" id="three-oclock">
+          <span class="input-group-text"> 3:00 PM </span>
+          <textarea type="text" aria-label="First name" class="form-control col" id="three-oclock-text"></textarea>
+          <button class="btn btn-outline-secondary" type="button" id="button-addon2"><span class="oi oi-lock-locked"></span></button>
+        </form>
+      </div>
         <!-- 4:00 PM -->
-        <div class="input-group row">
-          <span class="input-group-text" id ="four-oclock"> 4:00 PM </span>
-          <input type="text" aria-label="First name" class="form-control">
-          <button class="btn btn-outline-secondary" type="button" id="button-addon2">Save</button>
-        </div>
+        <div class="row">
+          <form class="input-group" id="four-oclock">
+          <span class="input-group-text"> 4:00 PM </span>
+          <textarea type="text" aria-label="First name" class="form-control col" id="four-oclock-text"></textarea>
+          <button class="btn btn-outline-secondary" type="button" id="button-addon2"><span class="oi oi-lock-locked"></span></button>
+        </form>
+      </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    <script src="assets/js/script.js"></script> </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>
