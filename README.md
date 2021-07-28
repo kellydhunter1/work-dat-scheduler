@@ -8,7 +8,7 @@ HTML, CSS, Bootstrap, Javascript
 
 ## Website
 https://kellydhunter1.github.io/work-day-scheduler/
-(https://user-images.githubusercontent.com/81445500/127249453-9674c744-651d-48fd-9cd5-4d9a23565a03.png)
+![Screen Shot 2021-07-27 at 9 33 21 PM](https://user-images.githubusercontent.com/81445500/127249571-c8dc1329-8cfa-4d7d-9b3e-2c2319554bb3.png)
 
 ## Contribution
 Created by: Kelly Hunter kellydhunter1@gmail.com
